@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Aleksei Anishchenko](https://up.htmlacademy.ru/adaptive/29/user/1848665).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
