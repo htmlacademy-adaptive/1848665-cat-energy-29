@@ -5,6 +5,7 @@
     <title>Каталог</title>
   </head>
   <body class="page__body">
+    <!-- Шапка сайта -->
     <header class="header">
       <a class="header__logo" href="index.html">
         <img class="header__image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип интернет магазина 'Кэт энерджи'">
@@ -13,22 +14,21 @@
         <img class="logo__image" src="img/footer-logo 2.svg" width="101" height="18" alt="Cat energy">
       </a>
       <nav class="main-nav">
-        <button class="main-nav--toggle" type="button" aria-label="Открыть меню"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a>Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__button" type="button" aria-label="Открыть меню"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a role="link" aria-disabled="true">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
+    <!-- Основной контент сайта -->
     <main class="main">
       <section class="catalog">
         <div class="catalog__wrapper">
@@ -36,163 +36,177 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <article class="card-product">
-                <a class="card-product__link" href="#">
-                  <h3 class="card-product__title">Cat Energy PRO 500 г</h3>
+                <h3 class="card-product__title">
+                  <a class="card-product__link" role="link" aria-disabled="true">Cat Energy PRO 500 г</a>
+                </h3>
+                <a class="card-product__link" role="link" aria-disabled="true">
                   <img class="card-product__image" src="img/catalog-1-desktop.png" alt="Функциональное питание для котов Cat Energy PRO 500 грамм со вкусом курицы">
                 </a>
                 <table class="card-product__table table">
-                  <tr class="table__line">
-                    <th class="table__column">Масса</th>
-                    <td class="table__column">500 г</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Масса</th>
+                    <td class="table-line__column-value">500 г</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Вкус</th>
-                    <td class="table__column">Курица</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Вкус</th>
+                    <td class="table-line__column-value">Курица</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Цена</th>
-                    <td class="table__column">700 ₽</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Цена</th>
+                    <td class="table-line__column-value">700 ₽</td>
                   </tr>
                 </table>
-                <a class="card-product__button button" href="#">Заказать</a>
+                <a class="card-product__button button" role="link" aria-disabled="true">Заказать</a>
               </article>
             </li>
             <li class="catalog__item">
               <article class="card-product">
-                <a class="card-product__link" href="#">
-                  <h3 class="card-product__title">Cat Energy PRO 1000 г</h3>
+                <h3 class="card-product__title">
+                  <a class="card-product__link" role="link" aria-disabled="true">Cat Energy PRO 1000 г</a>
+                </h3>
+                <a class="card-product__link" role="link" aria-disabled="true">
                   <img class="card-product__image" src="img/catalog-2-desktop.png" alt="Функциональное питание для котов Cat Energy PRO 1000 грамм со вкусом курицы">
                 </a>
                 <table class="card-product__table table">
-                  <tr class="table__line">
-                    <th class="table__column">Масса</th>
-                    <td class="table__column">1000 г</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Масса</th>
+                    <td class="table-line__column-value">1000 г</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Вкус</th>
-                    <td class="table__column">Курица</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Вкус</th>
+                    <td class="table-line__column-value">Курица</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Цена</th>
-                    <td class="table__column">1000 ₽</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Цена</th>
+                    <td class="table-line__column-value">1000 ₽</td>
                   </tr>
                 </table>
-                <a class="card-product__button button" href="#">Заказать</a>
+                <a class="card-product__button button" role="link" aria-disabled="true">Заказать</a>
               </article>
             </li>
             <li class="catalog__item">
               <article class="card-product">
-                <a class="card-product__link" href="#">
-                  <h3 class="card-product__title">Cat Energy PRO 500 г</h3>
+                <h3 class="card-product__title">
+                  <a class="card-product__link" role="link" aria-disabled="true">Cat Energy PRO 500 г</a>
+                </h3>
+                <a class="card-product__link" role="link" aria-disabled="true">
                   <img class="card-product__image" src="img/catalog-3-desktop.png" alt="Функциональное питание для котов Cat Energy PRO 500 грамм со вкусом рыбы">
                 </a>
                 <table class="card-product__table table">
-                  <tr class="table__line">
-                    <th class="table__column">Масса</th>
-                    <td class="table__column">500 г</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Масса</th>
+                    <td class="table-line__column-value">500 г</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Вкус</th>
-                    <td class="table__column">Рыба</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Вкус</th>
+                    <td class="table-line__column-value">Рыба</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Цена</th>
-                    <td class="table__column">700 ₽</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Цена</th>
+                    <td class="table-line__column-value">700 ₽</td>
                   </tr>
                 </table>
-                <a class="card-product__button button" href="#">Заказать</a>
+                <a class="card-product__button button" role="link" aria-disabled="true">Заказать</a>
               </article>
             </li>
             <li class="catalog__item">
               <article class="card-product">
-                <a class="card-product__link" href="#">
-                  <h3 class="card-product__title">Cat Energy PRO 1000 г</h3>
+                <h3 class="card-product__title">
+                  <a class="card-product__link" role="link" aria-disabled="true">Cat Energy PRO 1000 г</a>
+                </h3>
+                <a class="card-product__link" role="link" aria-disabled="true">
                   <img class="card-product__image" src="img/catalog-4-desktop.png" alt="Функциональное питание для котов Cat Energy PRO 1000 грамм со вкусом рыбы">
                 </a>
                 <table class="card-product__table table">
-                  <tr class="table__line">
-                    <th class="table__column">Масса</th>
-                    <td class="table__column">1000 г</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Масса</th>
+                    <td class="table-line__column-value">1000 г</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Вкус</th>
-                    <td class="table__column">Рыба</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Вкус</th>
+                    <td class="table-line__column-value">Рыба</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Цена</th>
-                    <td class="table__column">1000 ₽</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Цена</th>
+                    <td class="table-line__column-value">1000 ₽</td>
                   </tr>
                 </table>
-                <a class="card-product__button button" href="#">Заказать</a>
+                <a class="card-product__button button" role="link" aria-disabled="true">Заказать</a>
               </article>
             </li>
             <li class="catalog__item">
               <article class="card-product">
-                <a class="card-product__link" href="#">
-                  <h3 class="card-product__title">Cat Energy slim 500 г</h3>
+                <h3 class="card-product__title">
+                  <a class="card-product__link" role="link" aria-disabled="true">Cat Energy slim 500 г</a>
+                </h3>
+                <a class="card-product__link" role="link" aria-disabled="true">
                   <img class="card-product__image" src="img/catalog-5-desktop.png" alt="Функциональное питание для котов Cat Energy slim 500 грамм со вкусом гречки">
                 </a>
                 <table class="card-product__table table">
-                  <tr class="table__line">
-                    <th class="table__column">Масса</th>
-                    <td class="table__column">500 г</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Масса</th>
+                    <td class="table-line__column-value">500 г</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Вкус</th>
-                    <td class="table__column">Гречка</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Вкус</th>
+                    <td class="table-line__column-value">Гречка</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Цена</th>
-                    <td class="table__column">400 ₽</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Цена</th>
+                    <td class="table-line__column-value">400 ₽</td>
                   </tr>
                 </table>
-                <a class="card-product__button button" href="#">Заказать</a>
+                <a class="card-product__button button" role="link" aria-disabled="true">Заказать</a>
               </article>
             </li>
             <li class="catalog__item">
               <article class="card-product">
-                <a class="card-product__link" href="#">
-                  <h3 class="card-product__title">Cat Energy slim 1000 г</h3>
+                <h3 class="card-product__title">
+                  <a class="card-product__link" role="link" aria-disabled="true">Cat Energy slim 1000 г</a>
+                </h3>
+                <a class="card-product__link" role="link" aria-disabled="true">
                   <img class="card-product__image" src="img/catalog-6-desktop.png" alt="Функциональное питание для котов Cat Energy slim 1000 грамм со вкусом гречки">
                 </a>
                 <table class="card-product__table table">
-                  <tr class="table__line">
-                    <th class="table__column">Масса</th>
-                    <td class="table__column">1000 г</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Масса</th>
+                    <td class="table-line__column-value">1000 г</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Вкус</th>
-                    <td class="table__column">Гречка</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Вкус</th>
+                    <td class="table-line__column-value">Гречка</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Цена</th>
-                    <td class="table__column">700 ₽</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Цена</th>
+                    <td class="table-line__column-value">700 ₽</td>
                   </tr>
                 </table>
-                <a class="card-product__button button" href="#">Заказать</a>
+                <a class="card-product__button button" role="link" aria-disabled="true">Заказать</a>
               </article>
             </li>
             <li class="catalog__item">
               <article class="card-product">
-                <a class="card-product__link" href="#">
-                  <h3 class="card-product__title">Cat Energy slim 500 г</h3>
+                <h3 class="card-product__title">
+                  <a class="card-product__link" role="link" aria-disabled="true">Cat Energy slim 500 г</a>
+                </h3>
+                <a class="card-product__link" role="link" aria-disabled="true">
                   <img class="card-product__image" src="img/catalog-7-desktop.png" alt="Функциональное питание для котов Cat Energy slim 500 грамм со вкусом риса">
                 </a>
                 <table class="card-product__table table">
-                  <tr class="table__line">
-                    <th class="table__column">Масса</th>
-                    <td class="table__column">500 г</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Масса</th>
+                    <td class="table-line__column-value">500 г</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Вкус</th>
-                    <td class="table__column">Рис</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Вкус</th>
+                    <td class="table-line__column-value">Рис</td>
                   </tr>
-                  <tr class="table__line">
-                    <th class="table__column">Цена</th>
-                    <td class="table__column">500 ₽</td>
+                  <tr class="table__line table-line">
+                    <th class="table-line__column-attribute">Цена</th>
+                    <td class="table-line__column-value">500 ₽</td>
                   </tr>
                 </table>
-                <a class="card-product__button button" href="#">Заказать</a>
+                <a class="card-product__button button" role="link" aria-disabled="true">Заказать</a>
               </article>
             </li>
             <li class="catalog__item products">
@@ -209,26 +223,26 @@
             <li class="additional-products__item">
               <h3 class="additional-products__title">Сахарозаменитель</h3>
               <p class="additional-products__text">1 упаковка (100 г)</p>
-              <p class="additional-products__text">200 ₽</p>
-              <a class="additional-products__button button" href="#">Заказать</a>
+              <p class="additional-products__value">200 ₽</p>
+              <a class="additional-products__button button" role="link" aria-disabled="true">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__title">Питьевая вода</h3>
               <p class="additional-products__text">5 литров</p>
-              <p class="additional-products__text">50 ₽</p>
-              <a class="additional-products__button button" href="#">Заказать</a>
+              <p class="additional-products__value">50 ₽</p>
+              <a class="additional-products__button button" role="link" aria-disabled="true">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__title">Молоко</h3>
               <p class="additional-products__text">1 литр</p>
-              <p class="additional-products__text">100 ₽</p>
-              <a class="additional-products__button button" href="#">Заказать</a>
+              <p class="additional-products__value">100 ₽</p>
+              <a class="additional-products__button button" role="link" aria-disabled="true">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__title">Витамины</h3>
               <p class="additional-products__text">1 упаковка (30 г)</p>
-              <p class="additional-products__text">300 ₽</p>
-              <a class="additional-products__button button" href="#">Заказать</a>
+              <p class="additional-products__value">300 ₽</p>
+              <a class="additional-products__button button" role="link" aria-disabled="true">Заказать</a>
             </li>
           </ul>
         </div>
@@ -250,34 +264,30 @@
         <img class="contacts__maps" src="img/location.png" width="320" height="362" alt="Карта местонахождения интернет магазина 'Кэт энерджи'">
       </section>
     </main>
+    <!-- Подвал сайта -->
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="logo" href="index.html">
           <img class="logo__image" src="img/footer-logo 2.svg" width="101" height="18" alt="Cat energy">
         </a>
-        <div class="footer__social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>
