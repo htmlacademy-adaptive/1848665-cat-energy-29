@@ -1,0 +1,43 @@
+@use "../common/variables.scss";
+
+.advantages {
+  padding-bottom: 50px;
+
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__illustration {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: variables.$basic-green;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__description {
+    width: 200px;
+    color: variables.$special-dark-grey;
+  }
+}

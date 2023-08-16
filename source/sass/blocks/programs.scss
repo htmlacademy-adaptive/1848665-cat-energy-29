@@ -1,0 +1,62 @@
+@use "../common/variables.scss";
+
+.programs {
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: variables.$basic-grey;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__illustration {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: variables.$basic-green;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    position: absolute;
+  }
+
+  &__icon--slim {
+    left: 8px;
+    bottom: 2px;
+  }
+
+  &__icon--pro {
+    left: -9px;
+    bottom: 13px;
+  }
+
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  &__description {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: variables.$special-dark-grey;
+    border-bottom: 1px solid variables.$border-grey;
+  }
+
+  &__link {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+
+  }
+

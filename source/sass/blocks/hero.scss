@@ -1,0 +1,27 @@
+@use "../common/variables.scss";
+
+.hero {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: variables.$basic-white;
+  background-image: linear-gradient(to bottom, variables.$background-hero-left 50%, variables.$background-hero-right 50%), url("../img/index-background-hero.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  padding-top: 27px;
+
+  &__title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  &__slogan {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 30px;
+  }
+
+}

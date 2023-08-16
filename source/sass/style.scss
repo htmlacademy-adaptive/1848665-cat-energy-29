@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+// Подключает общие стили
+@use "common/fonts.scss";
+@use "common/global.scss";
+@use "common/variables.scss";
+@use "common/wrapper.scss";
+@use "common/title.scss";
+@use "common/description";
+@use "common/list.scss";
+@use "common/link.scss";
+@use "common/fieldset.scss";
+@use "common/button.scss";
+@use "common/visually-hidden.scss";
+
+// Подключает стили основных блоков
+@use "blocks/header.scss";
+@use "blocks/footer.scss";
+
+// Подключает стили главной страницы
+@use "blocks/hero.scss";
+@use "blocks/programs.scss";
+@use "blocks/article.scss";
+@use "blocks/contacts.scss";
+@use "blocks/stats.scss";
+@use "blocks/advantages.scss";
+@use "blocks/slider.scss";

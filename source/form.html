@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="header wrapper">
       <a class="header__logo" href="index.html">
         <img class="header__image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип интернет магазина 'Кэт энерджи'">
       </a>
@@ -15,15 +16,15 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__button" type="button" aria-label="Открыть меню"></button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a role="link" aria-disabled="true">Подбор программы</a>
+            <a class="link" role="link" aria-disabled="true">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -31,9 +32,9 @@
     <!-- Основной контент сайта -->
     <main class="main">
       <section class="program">
-        <div class="program__wrapper">
-          <h1 class="program__title">Подбор программы</h1>
-          <p class="program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <div class="program__wrapper wrapper">
+          <h1 class="program__title title">Подбор программы</h1>
+          <p class="program__description description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="program__form form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="form__basic-data basic-data fieldset">
               <legend class="visually-hidden">Основные данные</legend>
@@ -108,10 +109,10 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper wrapper">
           <h2 class="visually-hidden">Карта</h2>
-          <p class="contacts__description">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__description description">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <!-- <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA"></iframe> -->
@@ -120,11 +121,11 @@
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
-      <div class="footer__wrapper">
+      <div class="footer__wrapper wrapper">
         <a class="logo" href="index.html">
           <img class="logo__image" src="img/footer-logo 2.svg" width="101" height="18" alt="Cat energy">
         </a>
-        <ul class="footer__list">
+        <ul class="footer__list list">
           <li class="footer__item">
             <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
@@ -141,7 +142,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="footer__copyright link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>
