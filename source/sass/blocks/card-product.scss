@@ -1,0 +1,39 @@
+@use "../common/variables.scss";
+
+.card-product {
+  padding-bottom: 25px;
+}
+
+.card-product__wrapper {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 17px;
+}
+
+.card-product__illustration {
+  width: 50%;
+}
+
+.card-product__image {
+  padding: 10.5px 36px;
+}
+
+.card-product__description {
+  width: 50%;
+  padding-bottom: 4px;
+}
+
+.card-product__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: variables.$special-dark-grey-2;
+  padding-right: 64px;
+  padding-bottom: 14px;
+}
+
+.card-product__table {
+  display: flex;
+}

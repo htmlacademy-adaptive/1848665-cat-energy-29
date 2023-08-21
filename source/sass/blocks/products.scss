@@ -1,0 +1,52 @@
+@use "../common/variables.scss";
+
+.products {
+  padding-bottom: 25px;
+}
+
+.products__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 30.5px;
+  padding-right: 30.5px;
+  padding-bottom: 21px;
+}
+
+.products__title {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: variables.$special-dark-grey-3;
+  padding-top: 78px;
+  padding-bottom: 8px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/plus.svg");
+  }
+}
+
+.products__description {
+  font-size: 12px;
+  line-height: 16px;
+  color: variables.$special-dark-grey;
+}
+
+.products__button {
+  width: 100%;
+  padding: 10px 0;
+  text-transform: uppercase;
+  background-color: variables.$basic-grey;
+  color: variables.$special-dark-grey;
+  border: none;
+}

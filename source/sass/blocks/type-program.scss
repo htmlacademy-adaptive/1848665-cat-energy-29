@@ -1,0 +1,11 @@
+@use "../common/variables.scss";
+
+.type-program__label {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.type-program__input {
+  margin-right: 15px;
+}

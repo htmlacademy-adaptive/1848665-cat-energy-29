@@ -1,0 +1,18 @@
+@use "../common/variables.scss";
+
+.program__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  padding-top: 27px;
+  padding-bottom: 37px;
+}
+
+.program__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 39px;
+  text-transform: uppercase;
+}

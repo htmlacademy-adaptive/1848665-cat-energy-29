@@ -1,7 +1,7 @@
 // Подключает общие стили
 @use "common/fonts.scss";
-@use "common/global.scss";
 @use "common/variables.scss";
+@use "common/global.scss";
 @use "common/wrapper.scss";
 @use "common/title.scss";
 @use "common/description";
@@ -14,6 +14,7 @@
 // Подключает стили основных блоков
 @use "blocks/header.scss";
 @use "blocks/footer.scss";
+@use "blocks/main-nav.scss";
 
 // Подключает стили главной страницы
 @use "blocks/hero.scss";
@@ -23,3 +24,20 @@
 @use "blocks/stats.scss";
 @use "blocks/advantages.scss";
 @use "blocks/slider.scss";
+
+// Подключает стили страницы формы
+@use "blocks/program.scss";
+@use "blocks/form.scss";
+@use "blocks/basic-data.scss";
+@use "blocks/type-program.scss";
+@use "blocks/form-contacts.scss";
+@use "blocks/form-comment.scss";
+@use "blocks/form-additional.scss";
+
+//Подключает стили каталога
+@use "blocks/catalog.scss";
+@use "blocks/card-product.scss";
+@use "blocks/table.scss";
+@use "blocks/products.scss";
+@use "blocks/additional-products.scss";
+@use "blocks/offers.scss";

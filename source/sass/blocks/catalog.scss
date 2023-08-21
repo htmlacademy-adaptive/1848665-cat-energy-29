@@ -1,0 +1,15 @@
+@use "../common/variables.scss";
+
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  padding-top: 27px;
+  padding-bottom: 41px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+}

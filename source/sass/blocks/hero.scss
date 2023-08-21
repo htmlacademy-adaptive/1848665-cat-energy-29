@@ -4,24 +4,54 @@
   font-family: "Oswald", sans-serif;
   text-align: center;
   color: variables.$basic-white;
-  background-image: linear-gradient(to bottom, variables.$background-hero-left 50%, variables.$background-hero-right 50%), url("../img/index-background-hero.jpg");
+}
+
+.hero__wrapper {
+  position: relative;
+  background: linear-gradient(270deg, #62A53A 15.70%, #64A73C 76.46%);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 320px 302px;
+  min-width: 320px;
+  min-height: 302px;
   padding-top: 27px;
+  z-index: -1;
 
-  &__title {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-    margin-bottom: 25px;
-  }
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/cat-greengo.png");
+      width: 320px;
+      height: 302px;
+      z-index: -1;
+    }
+}
 
-  &__slogan {
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 14px;
-    margin-bottom: 30px;
-  }
+.hero__container {
+  position: relative;
+}
 
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+
+.hero__slogan {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  padding-bottom: 150px;
+}
+
+.hero__image {
+  position: absolute;
+  bottom: 35px;
+}
+
+.hero__button {
+  margin-top: 138px;
 }

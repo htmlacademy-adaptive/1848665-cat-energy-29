@@ -1,0 +1,15 @@
+@use "../common/variables.scss";
+
+.table {
+  font-size: 12px;
+  height: 48px;
+  font-weight: 400;
+  color: variables.$special-dark-grey;
+}
+
+.table__line {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  height: 16px;
+}
