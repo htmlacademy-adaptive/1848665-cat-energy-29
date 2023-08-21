@@ -8,7 +8,7 @@
 
 .hero__wrapper {
   position: relative;
-  background: linear-gradient(270deg, #62A53A 15.70%, #64A73C 76.46%);
+  background: linear-gradient(270deg, variables.$background-hero-left 15.70%, variables.$background-hero-right 76.46%);
   background-position: top;
   background-repeat: no-repeat;
   min-width: 320px;
