@@ -31,8 +31,7 @@
 }
 
 .advantages__description--leaf {
-
-  &::before {
+&::before {
     position: absolute;
     left: -80px;
     top: -2px;
@@ -44,11 +43,9 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-
 }
 
 .advantages__description--flask {
-
   &::before {
     position: absolute;
     left: -80px;
@@ -61,11 +58,9 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-
 }
 
 .advantages__description--eat {
-
   &::before {
     position: absolute;
     left: -80px;
@@ -78,11 +73,9 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-
 }
 
 .advantages__description--clock {
-
   &::before {
     position: absolute;
     left: -80px;
@@ -95,5 +88,4 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-
 }
