@@ -3,27 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <!-- Шапка сайта -->
-    <header class="header">
-      <a class="header__logo" href="index.html">
-        <img class="header__image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип интернет магазина 'Кэт энерджи'">
-      </a>
-      <a class="logo" href="index.html">
-        <img class="logo__image" src="img/footer-logo 2.svg" width="101" height="18" alt="Cat energy">
-      </a>
+    <header class="header wrapper">
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <img class="header__image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип интернет магазина 'Кэт энерджи'">
+          <img class="header__site-image" src="img/footer-logo.svg" width="101" height="18" alt="Cat energy">
+        </a>
+        <button class="header__button-navigation" type="button" aria-label="Открыть меню">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="3" x2="24" y2="3" stroke="black" stroke-width="2"/>
+            <line y1="11" x2="24" y2="11" stroke="black" stroke-width="2"/>
+            <line y1="19" x2="24" y2="19" stroke="black" stroke-width="2"/>
+            </svg>
+        </button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__button" type="button" aria-label="Открыть меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
+        <ul class="main-nav__list list">
           <li class="main-nav__item main-nav__item--active">
-            <a role="link" aria-disabled="true">Подбор программы</a>
+            <a class="main-nav__link link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" role="link" aria-disabled="true">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -31,23 +38,23 @@
     <!-- Основной контент сайта -->
     <main class="main">
       <section class="program">
-        <div class="program__wrapper">
-          <h1 class="program__title">Подбор программы</h1>
-          <p class="program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <div class="program__wrapper wrapper">
+          <h1 class="program__title title">Подбор программы</h1>
+          <p class="program__description description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="program__form form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="form__basic-data basic-data fieldset">
               <legend class="visually-hidden">Основные данные</legend>
               <label class="basic-data__label label" for="cat-name">
-                <span class="label__name">Имя:*</span>
+                <span class="basic-data__label-name">Имя:*</span>
                 <input class="basic-data___input input" type="text" name="cat-name" id="cat-name"
                   placeholder="Барсик" required>
               </label>
               <label class="basic-data__label label" for="weight-cat">
-                <span class="label__name">Вес (кг):*</span>
+                <span class="basic-data__label-name">Вес (кг):*</span>
                 <input class="basic-data___input input" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
               </label>
               <label class="basic-data__label label" for="age-cat">
-                <span class="label__name">Возраст (лет):</span>
+                <span class="basic-data__label-name">Возраст (лет):</span>
                 <input class="basic-data___input input" type="number" name="age-cat" id="age-cat" placeholder="7">
               </label>
             </fieldset>
@@ -70,11 +77,11 @@
               <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
               <label class="form-contacts__label label" for="weight-cat">
                 <span class="label__name">E-mail:*</span>
-                <input class="form-contacts___input input" type="email" name="email-owner" id="email-owner" placeholder="кuklachev@gmail.com" required>
+                <input class="form-contacts__input input" type="email" name="email-owner" id="email-owner" placeholder="кuklachev@gmail.com" required>
               </label>
               <label class="form-contacts__label label" for="weight-cat">
                 <span class="label__name">Телефон:*</span>
-                <input class="form-contacts___input input" type="tel" name="tel-owner" id="tel-owner" placeholder="8 (960) 900-60-90" required>
+                <input class="form-contacts__input input" type="tel" name="tel-owner" id="tel-owner" placeholder="8 (960) 900-60-90" required>
               </label>
             </fieldset>
             <fieldset class="form__comment form-comment fieldset">
@@ -101,17 +108,17 @@
                 <span class="form-additional__name">витамины</span>
                 <input class="form-additional__input checkbox" type="checkbox" name="additional" value="vitamins" id="vitamins">
               </label>
-              <span class="form-additional__text">* — Обязательные поля</span>
             </fieldset>
             <button class="form__button button" type="submit">Отправить заявку</button>
+            <span class="form__text">* — Обязательные поля</span>
           </form>
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper wrapper">
           <h2 class="visually-hidden">Карта</h2>
-          <p class="contacts__description">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__description description">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <!-- <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA"></iframe> -->
@@ -120,28 +127,34 @@
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
-      <div class="footer__wrapper">
-        <a class="logo" href="index.html">
-          <img class="logo__image" src="img/footer-logo 2.svg" width="101" height="18" alt="Cat energy">
+      <div class="footer__wrapper wrapper">
+        <a class="footer__logo" href="index.html">
+          <img class="footer__logo-image" src="img/footer-logo.svg" width="101" height="18" alt="Cat energy">
         </a>
-        <ul class="footer__list">
+        <ul class="footer__list list">
           <li class="footer__item">
-            <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="footer__link" href="https://vk.com/htmlacademy">
+              <img src="../img/vkontakte.svg" alt="Логотип 'Вконтакте'">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="footer__link" href="https://www.youtube.com/user/htmlacademyru">
+              <img src="../img/youtube.svg" alt="Логотип 'Ютуб'">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy">
+            <a class="footer__link" href="https://t.me/htmlacademy">
+              <img src="../img/telegram.svg" alt="Логотип 'Телеграм'">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
         </ul>
-        <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="footer__copyright-container">
+          <a class="footer__copyright link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <img src="../img/html academy.svg" alt="Логотип 'htmlacademy'">
+        </div>
       </div>
     </footer>
   </body>

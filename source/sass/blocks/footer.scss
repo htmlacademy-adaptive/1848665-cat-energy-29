@@ -1,0 +1,43 @@
+@use "../common/variables.scss";
+
+.footer {
+  margin-top: auto;
+  background-color: variables.$basic-grey;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 132px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid variables.$border-grey;
+}
+
+.footer__copyright-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-top: 1px solid variables.$border-grey;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 20px;
+  color: variables.$special-dark-grey;
+}

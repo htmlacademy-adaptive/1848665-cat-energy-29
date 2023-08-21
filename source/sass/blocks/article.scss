@@ -1,0 +1,37 @@
+@use "../common/variables.scss";
+
+.article {
+  background-color: variables.$basic-grey;
+}
+
+.article__wrapper {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.article__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.article__description {
+  color: variables.$special-dark-grey;
+  padding-bottom: 20px;
+}
+
+.article__stats {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.article__price {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -1,0 +1,22 @@
+@use "../common/variables.scss";
+
+.header__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 14px;
+}
+
+.header__site-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__button-navigation {
+  border: none;
+  background-color: transparent;
+}

@@ -1,0 +1,17 @@
+@use "../common/variables.scss";
+
+.form-comment__textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border: 1px solid variables.$border-grey-input;
+
+  &::placeholder {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: variables.$special-dark-grey;
+    text-transform: uppercase;
+    padding: 14px 15px;
+  }
+}
