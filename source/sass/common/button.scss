@@ -13,4 +13,10 @@
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px 14px 26px;
+  }
 }

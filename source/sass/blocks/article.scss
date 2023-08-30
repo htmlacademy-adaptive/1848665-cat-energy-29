@@ -2,11 +2,18 @@
 
 .article {
   background-color: variables.$basic-grey;
+
+  @media (min-width: variables.$tablet-width) {
+    background: linear-gradient(to top, variables.$basic-grey, variables.$basic-grey 462px, transparent 462px, transparent 100%);
+  }
 }
 
 .article__wrapper {
-  padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 101px;
+  }
 }
 
 .article__title {
@@ -14,24 +21,68 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  padding-top: 25px;
   margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    margin-top: 45px;
+    margin-bottom: 60px;
+  }
+}
+
+.article__stats-wrapper {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    gap: 167px;
+    margin-bottom: 99px;
+  }
 }
 
 .article__description {
   color: variables.$special-dark-grey;
   padding-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 55px;
+  }
 }
 
 .article__stats {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 43px;
+    padding-bottom: 0;
+  }
 }
 
 .article__price {
+  display: flex;
+  justify-content: center;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 11px;
+  }
+}
+
+.article__price-sum {
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 9px;
+    align-self: end;
+  }
 }
