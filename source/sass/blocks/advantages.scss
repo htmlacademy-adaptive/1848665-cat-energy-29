@@ -7,6 +7,12 @@
     padding-bottom: 47px;
     border-bottom: 1px solid variables.$border-grey-2;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 0;
+    margin-bottom: 69px;
+    border: none;
+  }
 }
 
 .advantages__title {

@@ -1,5 +1,18 @@
 @use "../common/variables.scss";
 
+.main-nav {
+  @media (min-width: variables.$tablet-width) {
+    width: 436px;
+    padding-top: 14px;
+    margin-right: 4px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 475px;
+    padding-top: 16px;
+    margin-right: 0;
+  }
+}
 
 .main-nav__list {
   display: flex;
@@ -30,30 +43,40 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding: 0;
+    border: none;
   }
 
   @media (min-width: variables.$desktop-width) {
     font-size: 20px;
     line-height: 1;
-    color: variables.$basic-white;
-    padding-top: 0;
-    padding-bottom: 0;
-    border: none;
+  }
+
+  &--active {
+    @media (min-width: variables.$tablet-width) {
+      padding-bottom: 11px;
+      margin-bottom: 2px;
+      border-bottom: 2px solid variables.$basic-green;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      padding-bottom: 12px;
+      margin-bottom: 2px;
+    }
   }
 }
 
-.main-nav {
-  @media (min-width: variables.$tablet-width) {
-    width: 436px;
-    margin-right: 4px;
-  }
-
+.main-nav__item-index {
   @media (min-width: variables.$desktop-width) {
-    width: 475px;
-    margin-right: 0;
+    color: variables.$basic-white;
+  }
+
+  &--active {
+    @media (min-width: variables.$desktop-width) {
+      border-bottom: 2px solid variables.$basic-white;
+    }
   }
 }
-
 
 .main-nav--nojs {
   @media (max-width: variables.$tablet-width) {

@@ -1,15 +1,56 @@
 @use "../common/variables.scss";
 
+.catalog {
+  margin-bottom: 25px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
 .catalog__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   font-weight: 400;
   padding-top: 27px;
-  padding-bottom: 41px;
+  margin-bottom: 41px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    padding-top: 65px;
+    margin-bottom: 84px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 .catalog__list {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: variables.$tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 80px;
+    justify-content: unset;
+  }
+}
+
+.catalog__item {
+  @media (min-width: variables.$tablet-width) {
+    background: linear-gradient(to top, variables.$basic-grey, variables.$basic-grey 430px, transparent 430px, transparent 100%);
+  }
 }

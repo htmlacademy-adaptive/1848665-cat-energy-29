@@ -5,6 +5,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: variables.$basic-grey;
+
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+    background: none;
+  }
 }
 
 .contacts__wrapper {
@@ -18,6 +24,18 @@
     padding-bottom: 60px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: variables.$basic-white;
+    width: 565px;
+    height: 199px;
+    padding-left: 80px;
+    padding-right: 78px;
+    z-index: 1;
   }
 }
 

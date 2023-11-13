@@ -1,8 +1,8 @@
 @use "variables.scss";
 
 .wrapper {
-  width: variables.$mobile-content-width;
   margin: 0 auto;
+  width: variables.$mobile-content-width;
 
   @media (min-width: variables.$tablet-width) {
     width: variables.$tablet-content-width;

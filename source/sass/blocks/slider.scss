@@ -26,6 +26,10 @@
   background-color: variables.$special-gray-2;
   border-radius: 2px;
   border: none;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 512px;
+  }
 }
 
 .slider__circle {
@@ -43,4 +47,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.slider__image {
+  @media (min-width: variables.$tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
