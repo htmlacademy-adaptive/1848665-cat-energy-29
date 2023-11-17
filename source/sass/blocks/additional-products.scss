@@ -1,17 +1,47 @@
 @use "../common/variables.scss";
 
-.additional-products__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: variables.$basic-black;
-  padding-top: 25px;
-  padding-bottom: 36px;
+.additional-products {
+  margin-bottom: 35px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 75px;
+  }
+}
+
+.additional-products__inner {
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+  }
 }
 
 .additional-products__wrapper {
-  padding-bottom: 35px;
+  margin-bottom: 35px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 896px;
+    margin-bottom: 0;
+  }
+}
+
+.additional-products__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  color: variables.$basic-black;
+  margin-bottom: 36px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 80px;
+    font-size: 36px;
+  }
 }
 
 .additional-products__list {
@@ -19,7 +49,18 @@
   flex-direction: column;
   gap: 30px;
   border-bottom: 1px solid variables.$special-gray;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 15px;
+    padding-bottom: 15px;
+    padding-top: 17px;
+    border-top: 1px solid variables.$special-gray;
+  }
 }
 
 .additional-products__item {
@@ -27,23 +68,102 @@
   flex-direction: column;
   padding-top: 13px;
   border-top: 1px solid variables.$special-gray;
+
+  @media (min-width: variables.$tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 26px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-top: 15px;
+  }
+}
+
+.additional-products__item:first-child {
+  @media (min-width: variables.$desktop-width) {
+    border-top: none;
+    padding-top: 0;
+  }
 }
 
 .additional-products__container {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   color: variables.$special-dark-grey;
-  padding-bottom: 15px;
+  margin-bottom: 12px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 22px;
+    margin-left: auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 285px;
+    height: 20px;
+    margin: 0;
+    margin-right: 40px;
+  }
+}
+
+.additional-products__text {
+  line-height: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-right: 50px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.additional-products__value {
+  @media (min-width: variables.$desktop-width) {
+    width: 42px;
+  }
 }
 
 .additional-products__product {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
   color: variables.$special-dark-grey-2;
-  padding-bottom: 13px;
+  margin-bottom: 13px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 161px;
+    margin: 0;
+  }
+}
+
+.additional-products__button {
+  @media (min-width: variables.$tablet-width) {
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 244px;
+  }
 }

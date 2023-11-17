@@ -8,6 +8,14 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: variables.$tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
 }
 
 .footer__list {
@@ -25,6 +33,12 @@
   padding-top: 40px;
   padding-bottom: 20px;
   border-bottom: 1px solid variables.$border-grey;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+  }
 }
 
 .footer__copyright-container {
@@ -34,6 +48,13 @@
   padding-top: 20px;
   padding-bottom: 40px;
   border-top: 1px solid variables.$border-grey;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 168px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+  }
 }
 
 .footer__copyright {

@@ -10,6 +10,11 @@
   font-weight: 400;
   min-width: 125px;
   height: 70px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats__meaning {
@@ -19,6 +24,11 @@
   min-height: 55px;
   padding-top: 15px;
   border: 1px solid variables.$special-gray;
+
+  @media (min-width: variables.$tablet-width) {
+    min-width: 162px;
+    min-height: 72px;
+  }
 }
 
 .stats__description {
@@ -32,4 +42,11 @@
   text-align: center;
   color: variables.$special-dark-grey;
   background-color: variables.$basic-grey;
+
+  @media (min-width: variables.$tablet-width) {
+    min-width: 125px;
+    font-size: 14px;
+    line-height: 1;
+    background-color: transparent;
+  }
 }

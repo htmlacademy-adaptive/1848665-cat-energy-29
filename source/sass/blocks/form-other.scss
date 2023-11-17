@@ -1,0 +1,51 @@
+@use "../common/variables.scss";
+
+.form-other__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: variables.$special-dark-grey;
+  margin-bottom: 34px;
+  text-transform: none;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+
+.form-other__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-other__control {
+  position: relative;
+  padding-left: 45px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.form-other__control-mark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid variables.$special-gray;
+
+  &:hover {
+    border-color: variables.$border-checkbox-hover;
+  }
+}
+
+.form-other__input[type="checkbox"]:checked + .form-other__control-mark::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/control.svg");
+}
