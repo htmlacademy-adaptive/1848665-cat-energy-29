@@ -43,7 +43,7 @@
           <h1 class="program__title title">Подбор программы</h1>
           <p class="program__description description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="program__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="form__wrapper">
+            <div class="form__program-wrapper">
               <!-- Основные данные -->
               <fieldset class="form__basic-data basic-data fieldset">
                 <legend class="visually-hidden">Основные данные</legend>
@@ -86,23 +86,30 @@
               </fieldset>
             </div>
             <!-- Контактные данные (владельца кота) -->
-            <fieldset class="form__contacts form-contacts fieldset">
-              <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
-              <label class="form-contacts__label" for="weight-cat">
-                <span class="label__name">E-mail:*</span>
-                <input class="form-contacts__input" type="email" name="email-owner" id="email-owner" placeholder="кuklachev@gmail.com" required>
-              </label>
-              <label class="form-contacts__label" for="weight-cat">
-                <span class="label__name">Телефон:*</span>
-                <input class="form-contacts__input" type="tel" name="tel-owner" id="tel-owner" placeholder="8 (960) 900-60-90" required>
-              </label>
-            </fieldset>
-            <fieldset class="form__comment form-comment fieldset">
-              <legend class="form-comment__title">Комментарий</legend>
-              <label class="form-comment__label" for="comment">
-                <textarea class="form-comment__textarea" rows="6" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </label>
-            </fieldset>
+            <div class="form__contacts-wrapper">
+              <fieldset class="form__contacts form-contacts fieldset">
+                <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
+                <div class="form-contacts__container">
+                  <label class="form-contacts__label" for="weight-cat">
+                    <span class="form-contacts__label-name">E-mail:*</span>
+                    <input class="form-contacts__input" type="email" name="email-owner" id="email-owner" placeholder="кuklachev@gmail.com" required>
+                  </label>
+                  <label class="form-contacts__label" for="weight-cat">
+                    <span class="form-contacts__label-name">Телефон:*</span>
+                    <input class="form-contacts__input" type="tel" name="tel-owner" id="tel-owner" placeholder="8 (960) 900-60-90" required>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+            <!-- Комментарий -->
+            <div class="form__comment-wrapper">
+              <fieldset class="form__comment form-comment fieldset">
+                <legend class="form-comment__title">Комментарий</legend>
+                <label class="form-comment__label" for="comment">
+                  <textarea class="form-comment__textarea" rows="6" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </label>
+              </fieldset>
+            </div>
              <!-- Дополнительно -->
             <fieldset class="form__other form-other fieldset">
               <legend class="form-other__title">Дополнительно</legend>
